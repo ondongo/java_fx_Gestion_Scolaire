@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!-- clique droit openscene builder 👍👍 -->
+
+<AnchorPane prefHeight="631.0" prefWidth="1020.0" style="-fx-background-color: #351f16;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="java_fx.controllers.ConnectController">
+   <children>
+      <AnchorPane layoutX="172.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="806.0" style="-fx-border-color: #f58612;">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <AnchorPane prefHeight="400.0" prefWidth="358.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fx:id="errorPassword" fill="#bc1111" layoutX="47.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password obligatoire" wrappingWidth="229.64886474609375">
+                           <font>
+                              <Font name="Baskerville Old Face" size="17.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtlogin" layoutX="47.0" layoutY="125.0" prefHeight="46.0" prefWidth="324.0" promptText="Login" style="-fx-border-color: #f58612; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnconnexion" disable="true" layoutX="273.0" layoutY="373.0" mnemonicParsing="false" onAction="#boutonConnexion" prefHeight="42.0" prefWidth="125.0" style="-fx-background-color: #f58612; -fx-border-color: white;" styleClass="maurel" text="SignUp" textFill="WHITE">
+                           <font>
+                              <Font name="Baskerville Old Face" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="47.0" layoutY="373.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="125.0" style="-fx-background-color: #f58612; -fx-border-color: white;" text="back" textFill="WHITE">
+                           <font>
+                              <Font name="Baskerville Old Face" size="18.0" />
+                           </font>
+                        </Button>
+                        <Text fx:id="lblError" fill="RED" layoutX="47.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="login ou password incorrect" wrappingWidth="229.64886474609375">
+                           <font>
+                              <Font name="Baskerville Old Face" size="18.0" />
+                           </font>
+                        </Text>
+                        <PasswordField fx:id="txtpassword" layoutX="48.0" layoutY="212.0" prefHeight="46.0" prefWidth="327.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: #f58612; -fx-border-width: 0px 0px 2px 0px;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </PasswordField>
+                        <Text fx:id="errorLogin" fill="#bc1111" layoutX="47.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="login obligatoire" wrappingWidth="229.64886474609375">
+                           <font>
+                              <Font name="Baskerville Old Face" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </center>
+               <left>
+                  <AnchorPane prefHeight="400.0" prefWidth="348.0" style="-fx-background-color: #f58612;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="347.0" fitWidth="384.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/kisspng-geometry-pattern-abstract-geometric-squares-5a9cd60e6b8cc0.8429595515202278544405-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="28.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JAVA-CONNECT" wrappingWidth="320.9635601043701">
+                           <font>
+                              <Font name="Baskerville Old Face" size="42.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </left>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

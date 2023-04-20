@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="885.0" style="-fx-background-color: #351f16;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="java_fx.controllers.ProfesseurController">
+   <children>
+      <Pane layoutX="33.0" layoutY="371.0" prefHeight="320.0" prefWidth="390.0" style="-fx-background-color: #f58612; -fx-border-color: white;">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AFFECTER CLASSE PROF">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="affectprofid" layoutX="14.0" layoutY="44.0" prefHeight="38.0" prefWidth="212.0" promptText="id prof" style="-fx-border-color: #351f16; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Button layoutX="16.0" layoutY="262.0" mnemonicParsing="false" onAction="#affectbutton" style="-fx-background-color: #351f16; -fx-border-color: white;" text="Affectation" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="252.0" layoutY="44.0" mnemonicParsing="false" onAction="#buttonrechercherprof" style="-fx-background-color: #351f16; -fx-border-color: white;" text="Search IdProf" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="244.0" layoutY="147.0" mnemonicParsing="false" onAction="#selection" style="-fx-background-color: #351f16; -fx-border-color: white;" text="Selection" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Pane fx:id="plprof" layoutX="14.0" layoutY="85.0">
+               <children>
+                  <TextField fx:id="affectprofrecup" prefHeight="38.0" prefWidth="212.0" promptText="nomProfRecuperer" style="-fx-border-color: #351f16; -fx-border-width: 0px 0px 2px 0px;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane fx:id="plclasse" layoutX="14.0" layoutY="188.0">
+               <children>
+                  <TextField fx:id="affectclasserecup" layoutY="21.0" prefHeight="38.0" prefWidth="212.0" promptText="classerecuperer" style="-fx-border-color: #351f16; -fx-border-width: 0px 0px 2px 0px;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <ComboBox fx:id="box" layoutX="14.0" layoutY="162.0" prefWidth="150.0" promptText="choix classe" />
+         </children>
+      </Pane>
+      <Pane layoutX="460.0" layoutY="370.0" prefHeight="320.0" prefWidth="390.0" style="-fx-background-color: #351f16; -fx-border-color: #f58612;">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FILTER CLASSE PROF">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tbfilter" layoutX="9.0" layoutY="39.0" prefHeight="260.0" prefWidth="369.0">
+              <columns>
+                <TableColumn fx:id="tcfilteridcclasse" prefWidth="182.4000244140625" text="idclasse" />
+                  <TableColumn fx:id="tcfilternomclasse" prefWidth="181.5999755859375" text="nomclasse" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutX="33.0" layoutY="15.0" prefHeight="320.0" prefWidth="389.0" style="-fx-background-color: #351f16; -fx-border-color: #f58612;">
+         <children>
+            <Text fill="WHITE" layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AJOUT PROF">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="disp" layoutX="29.0" layoutY="265.0" mnemonicParsing="false" onAction="#insert" style="-fx-background-color: #f58612; -fx-border-color: white;" text="Enregistrer" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtnom" layoutX="29.0" layoutY="89.0" prefHeight="16.0" prefWidth="235.0" promptText="Nom_complet" style="-fx-border-color: #f58612; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtnci" layoutX="29.0" layoutY="138.0" prefHeight="16.0" prefWidth="235.0" promptText="Nci" style="-fx-border-color: #f58612; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtgrade" layoutX="29.0" layoutY="194.0" prefHeight="16.0" prefWidth="235.0" promptText="Grade" style="-fx-border-color: #f58612; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="461.0" layoutY="15.0" prefHeight="320.0" prefWidth="390.0" style="-fx-background-color: #f58612; -fx-border-color: white;">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIST PROF">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tbprof" layoutX="5.0" layoutY="60.0" prefHeight="244.0" prefWidth="380.0">
+              <columns>
+                <TableColumn fx:id="tcprofid" prefWidth="67.20001220703125" text="id" />
+                <TableColumn fx:id="tcprofnom" prefWidth="124.79998779296875" text="Nomcomplet" />
+                  <TableColumn fx:id="tcprofnci" prefWidth="58.4000244140625" text="Nci" />
+                  <TableColumn fx:id="tcprofgrade" prefWidth="127.199951171875" text="Grade" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

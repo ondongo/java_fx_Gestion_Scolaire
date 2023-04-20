@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <BorderPane prefHeight="589.0" prefWidth="638.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f58612;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="152.0" layoutY="157.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="HOME">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnmenuRP2" disable="true" layoutX="152.0" layoutY="268.0" mnemonicParsing="false" onAction="#buttonVueClasse" style="-fx-background-color: transparent;" text="Classe">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnmenuAC" disable="true" layoutX="134.0" layoutY="217.0" mnemonicParsing="false" onAction="#buttonVueEtudiant" style="-fx-background-color: transparent;" text="Etudiant">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnmenuRP1" disable="true" layoutX="117.0" layoutY="327.0" mnemonicParsing="false" onAction="#buttonVueProf" style="-fx-background-color: transparent;" text="Professeur">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutY="656.0" prefHeight="50.0" prefWidth="230.0" style="-fx-border-color: #351f16; -fx-border-width: 2px 0px 0px 0px;">
+                     <children>
+                        <Button layoutX="99.0" layoutY="6.0" mnemonicParsing="false" onAction="#buttonDeconnexion" style="-fx-background-color: transparent;" text="Deconnexion">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Button>
+                        <FontAwesomeIconView glyphName="SHARE" layoutX="69.0" layoutY="35.0" size="30" />
+                     </children>
+                  </AnchorPane>
+                  <FontAwesomeIconView glyphName="HOME" layoutX="82.0" layoutY="191.0" size="40" />
+                  <FontAwesomeIconView glyphName="USERS" layoutX="82.0" layoutY="247.0" size="30" />
+                  <FontAwesomeIconView glyphName="BOOK" layoutX="87.0" layoutY="298.0" size="30" />
+                  <FontAwesomeIconView glyphName="USER" layoutX="87.0" layoutY="357.0" size="30" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="AnchorContent" prefHeight="638.0" prefWidth="677.0" style="-fx-background-color: #351f16;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
